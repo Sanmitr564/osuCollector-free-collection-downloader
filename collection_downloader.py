@@ -12,8 +12,8 @@ API_URL = 'https://osu.ppy.sh/api/v2'
 TOKEN_URL = 'https://osu.ppy.sh/oauth/token'
 USER = os.environ.get('USERNAME')
 PATH = f"C:/Users/{USER}/Downloads/"
-CLIENT_ID =  #Put your client id
-CLIENT_SECRET =  #Put your Osu! api key
+CLIENT_ID =  #Put your client id(int)
+CLIENT_SECRET =  #Put your Osu! api key(String)
 
 def get_html(collection_number):
 
