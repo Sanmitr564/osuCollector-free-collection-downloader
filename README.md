@@ -4,7 +4,7 @@ A tool that will automatically download all the beatmapsets in a collection from
 Mainly did it just to see if I could  
 If you like the service that [osu!Collector](https://osucollector.com/) provides you should still pay for it  
 If you are one of the owners of [osu!Collector](https://osucollector.com/) and would like me to remove this/make this private then dm sanmitr#4831 on Discord  
-If you wish to use this you will need to edit lines 14, 15, and 16  
+If you wish to use this you will need to edit lines 15 & 16  
 # Caveats:  
 In a moral grey zone  
 Not really user friendly bcuz all I cared about was getting the application to work  
