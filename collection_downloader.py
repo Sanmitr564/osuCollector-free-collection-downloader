@@ -2,7 +2,8 @@ from importlib.resources import path
 import requests
 from bs4 import BeautifulSoup
 from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
+#from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.chrome.options import Options
 import time
 import os
 
@@ -17,7 +18,12 @@ CLIENT_SECRET =  #Put your Osu! api key(String)
 
 def get_html(collection_number):
 
-    driver = webdriver.Chrome('./chromedriver')
+    options = Options()
+    options.add_argument('--headless')
+    options.add_argument('--disable-gpu')
+
+    driver = webdriver.Chrome(executable_path='./chromedriver', options=options)
+    #driver.minimize_window()
     driver.get(COLLECTOR_BASE + str(collection_number))
 
     while True:
@@ -114,6 +120,7 @@ def download_beatmapsets(beatmapset_ids, collection_number):
         print('Failed to download the following beatmapset(s)')
         for beatmapset in undownloaded_beatmaps:
             print(beatmapset)
+    
     
 if __name__ == '__main__':
     print('Please type the id of the collection you wish to download:')
