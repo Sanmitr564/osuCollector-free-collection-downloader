@@ -12,3 +12,5 @@ You need to provide your own Osu! api key and client id
 Its much slower than downloading directly from [osu!Collector](https://osucollector.com/) (I can't be bothered to learn threading)  
 Might need a virtual environment? Idk what those are for but I needed one to use the libraries I imported while writing it (as of the day I'm writing this I mainly code in Java)  
 You need to have google chrome installed on your device (if the version of chrome you are running is not 100 you may need to replace chromedriver.exe with a different version)  
+Chrome will run in the background, if you are uncomfortable with that then remove options from the parameters in line 25  
+If you followed the previous step and still wish for the program to not open over what you are currently doing remove the # from line 26  
